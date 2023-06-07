@@ -87,9 +87,12 @@ a {
     margin-bottom: 0.2rem;
   }
 }
+
+/* VIDEO BANNER CSS */
 .main-section_wrapper {
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  align-items:flex-end;
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -97,21 +100,13 @@ a {
   text-align: center;
 }
 
-.main-section_wrapper-about-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-  padding: 6rem 0 5rem 0;
-  row-gap: 2rem;
-}
 
-.main-section {
+
+.main-section_heading {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 7rem 2rem 0 0;
+  width: 100%;
+  padding: 7rem 2rem 3rem 0;
 }
 
 
@@ -123,23 +118,27 @@ a {
   z-index: -1;
 }
 
-.main-section h1 {
+.main-section_heading h1 {
   font-family: "Bodoni Moda";
     font-weight: bold;
     font-style: italic;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 60px;
     color: white;
-    padding-bottom: 3%;
+    padding-bottom: 0.2rem;
     text-align: center;
 }
 
-.main-section p {
+.main-section_heading p {
     font-family: "Lexend";
-    font-size: 15px;
+    font-size: 30px;
     color: white;
     text-align: center;
 }
+
+.call-to-shop {
+  height: 100vh;
+}
+
 .main-section_shop-btn {
   padding-top: 2rem;
 }
@@ -150,6 +149,16 @@ a {
   border: none;
   font-weight: 900;
   font-family: "Lexend";
+}
+
+.call-to-shop_picture-area {
+  overflow: hidden;
+}
+
+.call-to-shop_picture-area img {
+  min-width: 100%;
+  object-fit: contain;
+  
 }
 
 .main-section_choose-season {
@@ -509,4 +518,15 @@ a {
   .clothes-pic_phone {
     display: none;
   }
+}
+
+/* ABOUT US */
+.main-section_wrapper-about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 6rem 0 5rem 0;
+  row-gap: 2rem;
 }
