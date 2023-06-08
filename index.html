@@ -13,6 +13,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Bodoni+Moda"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <script
       src="https://kit.fontawesome.com/7d393e31ee.js"
       crossorigin="anonymous"
@@ -34,49 +40,75 @@
 
     <!-- MAIN SECTION -->
     <div class="main">
-    <div class="main-section_wrapper">
-      <video autoplay muted loop>
-        <source src="./fashion-video.mp4" type="video/mp4" />
-      </video>
-      <div class="main-section">
-            <h1>Classic Monochrome: Timeless Black and White Ensembles</h1>
-            <p>
-              Welcome to our captivating world of black and white geometrical
-              fashion! Discover the timeless allure of minimalism and bold
-              patterns, where sleek lines and captivating shapes meet. Explore
-              our curated lookbook and redefine your wardrobe with striking
-              monochromatic statements that leave a lasting impression.
-            </p>
-            <a href="" class="main-section_shop-btn"><button>SHOP NOW</button></a>
-            <!-- <div class="main-section_choose-season">
-              <h3>Choose your mood</h3>
-              <i
-                class="fa-solid fa-arrow-right fa-xl main-section_choose-season_arrow"
-              ></i>
-            </div> -->
+      <!-- VIDEO BANNER SECTION -->
+      <div class="main-section_wrapper">
+        <video class="w-100" autoplay muted loop playsinline>
+          <source src="./fashion-video.mp4" type="video/mp4" />
+        </video>
+        <div class="main-section_heading">
+          <h1>Classic Monochrome</h1>
+          <p>
+            New collection is here
+          </p>
+          
+        </div>
       </div>
-      <!-- <div class="main-section_choose-season_phone">
-        <h3>Choose your mood</h3>
-        <i
-          class="fa-solid fa-arrow-right fa-xl main-section_choose-season_arrow_phone"
-        ></i>
-      </div> -->
-      <!-- <div class="main-section_heading_anchor-wrapper_phone">
-        <a class="main-section-anchor_spring" href="#spring-pics"
-          ><button>Blooming Spring</button></a
-        >
-        <a class="main-section-anchor_summer" href="#summer-pics"
-          ><button>Vibrant Summer</button></a
-        >
-        <a class="main-section-anchor_fall" href="#autumn-pics"
-          ><button>Moody Autumn</button></a
-        >
-        <a class="main-section-anchor_winter" href="#"
-          ><button>Enchanting Winter</button></a
-        >
-      </div> -->
+      <!-- END OF VIDEO BANNER SECTION -->
+
+      <!-- CALL TO SHOP SECTION -->
+      <div class="row call-to-shop">
+        <div class="col-6 call-to-shop_text-area d-flex flex-column align-items-center justify-content-center mh-100">
+          <h1 class="fw-bold">NEW ARRIVALS</h1>
+          <p>Shop our newest and latest items</p>
+          <!-- TODO:Add link to shop -->
+          <a href="" class="main-section_shop-btn"><button>SHOP NOW</button></a>
+        </div>
+        <div class="col-6 call-to-shop_picture-area mh-100">
+          <img src="./main-section-fashion-pics/dress3.jpg">
+        </div>
+      </div>
+      <!-- END OF CALL TO SHOP SECTION -->
+
+      <div class="favourites-section_heading d-flex justify-content-center my-5">
+        <h5 class="fw-bold fs-3">OUR FAVOURITES</h5>
+      </div>
+      <div class="favourites-section d-flex justify-content-around">
+        <div class="col-3 px-2">
+          <div class="card border-0">
+            <img src="./main-section-fashion-pics/dress1.jpg" class="card-img-top rounded-5" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Summer Breeze</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 px-2">
+          <div class="card border-0">
+            <img src="./main-section-fashion-pics/dress3.jpg" class="card-img-top rounded-5" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sparkling Nights</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 px-2">
+          <div class="card border-0">
+            <img src="./main-section-fashion-pics/dress4.jpg" class="card-img-top rounded-5" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Effortless Grace</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 px-2">
+          <div class="card border-0 overflow-hidden">
+            <img src="./main-section-fashion-pics/dress5.jpg" class="card-img-top rounded-5 object-fit-cover" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Modern Muse</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+    <!-- END OF MAIN SECTION -->
+    
 
     <!-- PHOTO SECTION -->
     <div class="photo-wrapper">
@@ -125,23 +157,69 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="footer">
-      <div class="social-icons-section">
-        <img class="footer-logo" src="brand-logo.png" alt="" />
-        <p>Stay connected and follow us on our social networks for updates!</p>
-        <div class="social-icons">
-          <i class="fa-brands fa-square-facebook fa-2xl"></i>
-          <i class="fa-brands fa-square-instagram fa-2xl"></i>
-          <i class="fa-brands fa-square-twitter fa-2xl"></i>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-      <div class="subscribe-section">
-        <h5 class="subscribe-text">Subscribe to get our latest updates</h5>
-        <div class="subscribe-button-wrapper">
-          <input type="email" placeholder="E-mail" />
-          <button>Subscribe</button>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2023 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
         </div>
-      </div>
+      </footer>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
