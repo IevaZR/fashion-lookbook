@@ -4,12 +4,26 @@
 }
 .navbar {
   height: 5.5rem;
-  background-color: #ddbea9;
+  background-color: #e8cdbb;
   border-bottom: 1px solid #c1c0c0;
 }
 .logo {
-  height: 5rem;
+  height: 5.5rem;
   width: auto;
+}
+.logo-small {
+  display: none;
+}
+@media (max-width: 767px) {
+  .logo-large {
+    display: none;
+  }
+  .logo-small {
+    display: block;
+    width: 7rem;
+    height: auto;
+    justify-content: center;
+  }
 }
 
 /* VIDEO BANNER CSS */
